@@ -11,6 +11,6 @@ app.get('/',routes.home);
 
 var port = process.env.PORT || 3000;
 
-var server=app.listen(port,function(req,res){
+app.listen(port,function(){
     console.log("Catch the action at http://localhost:"+port);
 });
